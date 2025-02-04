@@ -15,354 +15,700 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         /* fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700;800&family=Rajdhani:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;600;700&display=swap');
+
 *{
+
     padding: 0;
+
     margin: 0;
+
     box-sizing: border-box;
+
     font-family: 'Rubik', sans-serif;
+
     text-decoration: none;
+
     transition: 0.3s;
+
 }
+
 *::selection{
+
     background-color: #ffaa17;
+
     color: #fff;
+
 }
+
+
 
 html{
+
     scroll-behavior: smooth;
+
 }
+
 .contanier{
+
     width: 85%;
+
     margin: auto;
+
 }
+
 .btn{
+
     padding: 15px 30px;
+
     color: #1c1e22;
+
     font-weight: 500;
+
     background-color: #ffaa17;
+
     border-radius: 10px;
+
     border: 1px solid #ffaa17;
+
 }
+
 .btn:hover{
+
     color: #ffaa17;
+
     background: #fff;
+
 }
+
+
 
 section{
+
     padding: 90px 0 40px;
+
 }
+
+
 
 .sec-top{
+
     text-align: center;
+
     margin-bottom: 30px;
+
 }
+
 .sec-top h1{
+
     color: #1c1e22;
+
     font-size: 40px;
+
 }
+
 .sec-top h1 span{
+
     color: #ffaa17;
+
 }
+
+
 
 .boxs{
+
     display: flex;
+
     flex-wrap: wrap;
+
     justify-content: space-between;
+
 }
+
 .boxs .box{
+
     width: 30%;
+
 }
+
 /* start Header */
 
+
+
 header{
+
     position: fixed;
+
     top: 0;
+
     left: 0;
+
     right: 0;
+
     background: transparent;
+
     z-index: 1000;
 
-}
-header.active{
-    background-color: #1c1e22;
-    border-bottom: 1px solid #8888884a;
-}
-header nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
-}
-header nav .nav-links a{
-    color: #fff;
-    margin-left: 50px;
-}
-header nav .nav-links a:hover,
-header nav .nav-links a.active{
-    color: #ffaa17;
+
+
 }
 
-#btn-menu{
-    display: none;
+header.active{
+
+    background-color: #1c1e22;
+
+    border-bottom: 1px solid #8888884a;
+
 }
+
+header nav{
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    height: 80px;
+
+}
+
+header nav .nav-links a{
+
+    color: #fff;
+
+    margin-left: 50px;
+
+}
+
+header nav .nav-links a:hover,
+
+header nav .nav-links a.active{
+
+    color: #ffaa17;
+
+}
+
+
+
+#btn-menu{
+
+    display: none;
+
+}
+
+
 
 /* start Hero */
 
+
+
 .hero{
+
     padding-top: 80px;
+
     background: url(hero-bg.png);
+
     min-height: 100vh;
+
     display: flex;
+
     justify-content: center;
+
     align-items: center;
+
 }
+
 .hero .contanier{
+
     display: flex;
+
     justify-content: space-between;
+
     align-items: center;
+
 }
+
 .hero .content h4{
+
     color: #ffaa17;
+
     font-size: 30px;
+
 }
+
 .hero .content h1{
+
     color: #fff;
+
     font-size: 65px;
+
     margin: 20px 0 10px;
+
 }
+
 .hero .content p{
+
     color: #e4e4e4;
+
     font-size: 30px;
+
     font-weight: bold;
+
     margin-bottom: 70px;
+
 }
+
 .hero .content .btn{
+
     font-size: 18px;
+
 }
+
 .hero .hero-img img{
+
     width: 450px;
+
 }
+
     .logo{
         width: 180px;
     }
  /* start about */ 
 
+
+
  .about {
+
     padding: 90px 0 50px;
+
  }
+
 .about .contanier{
+
     display: flex;
+
     justify-content: center;
+
 }
+
 .about .about-img img{
+
     width: 450px;
+
     border-radius: 10px;
+
 }
+
 .about .content{
+
     margin-left: 30px;
+
 }
+
 .about .content h1{
+
     color: #1c1e22;
+
     font-size: 45px;
+
 }
+
 .about .content h1 span{
+
     color: #ffaa17;
+
 }
+
 .about .content h3{
+
     color: #1c1e22;
+
     font-size: 20px;
+
     font-weight: 600;
+
     margin-bottom: 40px;
+
 }
+
 .about .content p{
+
     color: #444;
+
     line-height: 1.8;
+
     margin-bottom:70px;
+
 }
+
+
+
 
 
 /* start Contact */
 
+
+
 .contact{
+
     background: #f0f4f9;
+
 }
+
 .contact form{
+
     width: 60%;
+
     margin: auto;
+
     display: flex;
+
     flex-wrap: wrap;
+
     justify-content: space-between;
+
 }
+
 .contact form input{
+
     width: 48%;
+
     font-size: 18px;
+
     padding: 15px 10px;
+
     outline: none;
+
     border: 1px solid rgba(128, 112, 22, 0.3);
+
     margin-bottom: 20px;
+
     border-radius: 10px;
+
 }
+
 .contact form textarea{
+
     border: 1px solid rgba(128, 112, 22, 0.3);
+
     outline: none;
+
     border-radius: 10px;
+
     width: 100%;
+
     padding: 10px;
+
 }
+
 .contact form textarea:focus,
+
 .contact form input:focus{
+
     border-color: #ffaa17;
+
 }
+
 .contact form button{
+
     margin: 40px auto 0;
+
     cursor: pointer;
+
 }
+
 /* Media */
 
+
+
 @media(max-width:1200px){
+
     .contanier{
+
         width: 90%;
+
     }
+
     .hero .content h1{
+
         font-size: 50px;
+
     }
+
     .hero .content p{
+
         font-size: 25px;
+
     }
+
     .hero .hero-img img{
+
         width: 380px;
+
     }
+
     .hero{
+
         padding-bottom: 40px;
+
     }
+
     .about .content h3{
+
         font-size: 20px;
+
     }
+
     .about .content p{
+
         margin-bottom: 50px;
+
     }
+
     .about .about-img img{
+
         width: 380px;
+
     }
+
     .services .boxs .box h3{
+
         font-size: 22px;
-    }
-    .contact form{
-        width: 70%;
+
     }
 
+    .contact form{
+
+        width: 70%;
+
+    }
+
+
+
 }
+
 @media(max-width:900px){
+
     .hero .content h1{
+
         font-size: 40px;
+
     }
+
     .hero .content p{
+
         font-size: 22px;
+
     }
+
     .hero .hero-img img{
+
         width: 340px;
+
     }
+
     header nav .nav-links a{
+
         margin-left: 40px;
+
     }
+
     .about .contanier{
+
         flex-direction: column;
+
         text-align: center;
+
     }
+
     .about .about-img img{
+
         width: 340px;
+
     }
+
     .about .about-img {
+
         margin-bottom: 40px;
+
     }
+
     .boxs .box{
+
         width: 45%;
+
         margin-bottom: 40px;
+
     }
+
     .contact form{
+
         width: 80%;
+
     }
+
 }
+
 @media(max-width:780px){
+
     .hero .contanier{
+
         flex-direction: column-reverse;
+
     }
+
     .hero .hero-img img{
+
         width: 380px;
+
     }
+
     .hero .content h1{
+
         font-size: 50px;
+
     }
+
     .hero .content{
+
         margin-top: 40px;
+
         text-align: center;
+
     }
+
     .btn{
+
         padding: 12px 25px;
+
     }
+
     #btn-menu{
+
         display: block;
+
         color: #fff;
+
         font-size: 40px;
 
+
+
     }
+
     header nav .nav-links{
+
         position: absolute;
+
         top: -350px;
+
         left: 0;
+
         width: 100%;
+
         display: flex;
+
         flex-direction: column;
+
         background-color: #1c1e22;
+
     }
+
     header nav .nav-links.active{
+
         top: 100%;
+
     }
+
     header nav .nav-links a{
+
         width: 100%;
+
         margin: auto;
+
         padding: 20px;
+
         text-align: center;
+
         font-size: 20px;
+
         border-bottom: 1px solid #444;
+
     }
+
     header nav .nav-links a.active,
+
     header nav .nav-links a:hover{
+
         background-color: #ffaa17;
+
         color: #1c1e22;
+
     }
+
 }
+
 @media(max-width:670px){
+
     .hero .content h1{
+
         font-size: 40px;
+
     }
+
     .hero .hero-img img{
+
         width: 320px;
+
     }
+
     .boxs{
+
         justify-content: center;
 
+
+
     }
+
     .boxs .box{
+
         width: 70%;
-    }
-    .contact form{
-        width: 90%;
-    }
-}
-@media(max-width:500px){
-    .hero .hero-img img{
-        width: 280px;
-    }
-    .contact form{
-        width: 90%;
-        justify-content: center;
 
     }
-    .contact form input{
-        width: 100%;
+
+    .contact form{
+
+        width: 90%;
+
     }
+
+}
+
+@media(max-width:500px){
+
+    .hero .hero-img img{
+
+        width: 280px;
+
+    }
+
+    .contact form{
+
+        width: 90%;
+
+        justify-content: center;
+
+
+
+    }
+
+    .contact form input{
+
+        width: 100%;
+
+    }
+
 } 
         /* Add new social icons styles */
         .social-icons {
@@ -376,6 +722,7 @@ header nav .nav-links a.active{
             color: #1c1e22;
             font-size: 40px;
             transition: 0.3s;
+            border-radius: 20px;
         }
 
         .social-icons a:hover {
@@ -384,36 +731,83 @@ header nav .nav-links a.active{
     .contact_me{
         margin-bottom: 0;
     }
+    #social{
+        background: white;
+        width: 210px;
+        height: 50px;
+        border-radius: 50px;
+        padding: 10px;
+        margin: auto;
+        margin-top: 15px;
+        color: red;
+    }
     </style>
 </head>
 <body>
     <header>
+
         <nav class="contanier">
+
             <img class="logo" src="logo.png" alt="">
+
             <i id="btn-menu" class="fa-solid fa-bars"></i>
+
             <div class="nav-links">
+
                 <a href="#home" class="active">Home</a>
+
                 <a href="#about">About</a>
+
                 <a href="#Contact">Contact</a>
-            </div>
-        </nav>
-    </header>
-<!-- start home sec -->
-    <div class="hero" id="home">
-        <div class="contanier">
-            <div class="content">
-                <h4>Hello, I'm</h4>
-                <h1>ABDELRAHMAN MOHAMED</h1>
-                <p>writer & designer</p>
-                <a href="#about" class="btn" >about</a>
+
+                            <!-- Added Social Icons -->
+                <h1 id="social">-Social Medeia-</h1>
+                <div class="social-icons" >
+                    <a href="https://www.facebook.com/share/15ggMsSGhP/" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/boodyata123?igsh=MXR0YzBwOWwxNDgxeg==" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div> 
             </div>
 
-            <div class="hero-img">
-                <img src="hero.png" alt="">
+        </nav>
+
+    </header>
+
+<!-- start home sec -->
+
+    <div class="hero" id="home">
+
+        <div class="contanier">
+
+            <div class="content">
+
+                <h4>Hello, I'm</h4>
+
+                <h1>ABDELRAHMAN MOHAMED</h1>
+
+                <p>writer & designer</p>
+
+                <a href="#about" class="btn" >about</a>
+
             </div>
+
+
+
+            <div class="hero-img">
+
+                <img src="hero.png" alt="">
+
+            </div>
+
         </div>
+
     </div>
-<!-- About Section -->
+
+
+<!-- About Section -->
     <section id="about" class="about">
         <div class="contanier">
             <div class="about-img">
@@ -427,6 +821,7 @@ header nav .nav-links a.active{
 باستخدام أدوات التنسيق والألوان والخطوط، أحول النصوص إلى تجارب مرئية تُعبر عن الهوية بدقة، مع الحفاظ على وضوح الرسالة وجمال الشكل.  
 الهدف: إيصال الأفكار بسلاسة وبصمة لا تُنسى
                 </p>
+
                 <p>
                     A creative designer and professional writer, I blend the power of words and the magic of design in to craft visually striking content.  
 Using formatting tools, colors, and fonts, I transform texts into visual experiences that reflect identity precisely while maintaining message clarity and aesthetic appeal.  
@@ -442,21 +837,14 @@ The goal: Delivering ideas smoothly with an unforgettable imprint
     </section>
     <!-- start Contact -->
 
+
+
     <section id="Contact" class="contact">
         
         <div class="contanier">
             <div class="sec-top">
                 <h1 class="contact_me">Contact <span>Me</span></h1>
             </div>
-            <!-- Added Social Icons -->
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/share/15ggMsSGhP/" target="_blank">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-                    <a href="https://www.instagram.com/boodyata123?igsh=MXR0YzBwOWwxNDgxeg==" target="_blank">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </div> 
 
             <form id="contactForm">
                 <input type="text" id="firstName" placeholder="First Name" required>
@@ -470,24 +858,43 @@ The goal: Delivering ideas smoothly with an unforgettable imprint
     </section>
       <script>
     let btnMenu = document.getElementById('btn-menu');
+
 let Menu = document.querySelector('.nav-links');
 
+
+
 btnMenu.onclick = function(){
+
     btnMenu.classList.toggle('fa-times');
+
     Menu.classList.toggle('active')
+
 }
+
+
 
 let header = document.querySelector('header');
 
+
+
 window.onscroll = function(){
+
     if(this.scrollY >= 100){
+
         header.classList.add('active')
+
     }
+
     else{
+
         header.classList.remove('active')
+
     }
+
     btnMenu.classList.remove('fa-times')
+
     Menu.classList.remove('active')
+
 }
         const botToken = '7747110349:AAGk34CpXt6QlGt55Z9PcDjeZMycOK_iTVY';
 const chatId = '7896220410';
@@ -537,4 +944,4 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
 });
     </script>
 </body>
-</html>
+        </html>
